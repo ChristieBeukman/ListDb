@@ -18,5 +18,10 @@ namespace ListDb.Model
         public DbSet<ItemCategory> ItemCategories { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<ItemList> ItemLists { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
