@@ -1,13 +1,12 @@
-﻿<Window x:Class="ListDb.MainWindow"
+﻿<Window x:Class="ListDb.ViewModel.ItemCategoryView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ListDb"
+        xmlns:local="clr-namespace:ListDb.ViewModel"
         xmlns:vm="clr-namespace:ListDb.ViewModel"
-        
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="ItemCategoryView" Height="300" Width="300" WindowStyle="None">
     <Window.Resources>
         <vm:MainViewModel x:Key="ViewModel"/>
     </Window.Resources>
@@ -16,8 +15,8 @@
     </Window.DataContext>
     <Grid>
         <StackPanel>
-            <Button Content="ItemCategory" Command="{Binding LoadItemCategoryView, Source={StaticResource ViewModel}}"/>
-        </StackPanel>
-        
+            <Button Content="Cancel" Command="{Binding LoadMainWindow, Source={StaticResource ViewModel}}"
+                    />
+        </StackPanel> 
     </Grid>
 </Window>

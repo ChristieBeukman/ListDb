@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1fcf77540ec2441498054eaa76d7f82c" Name="Diagram1">
+        <EntityTypeShape EntityType="ListDBModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListDBModel.ItemCategory" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListDBModel.ItemList" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListDBModel.Item" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ListDBModel.Supplier" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="ListDBModel.FK_dbo_ItemLists_dbo_ItemCategories_ItemCategory_ItemCategoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="ListDBModel.FK_dbo_Items_dbo_ItemCategories_ItemCategory_ItemCategoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="ListDBModel.FK_dbo_ItemLists_dbo_Items_Item_ItemId" ManuallyRouted="false" />
+        <AssociationConnector Association="ListDBModel.FK_dbo_ItemLists_dbo_Suppliers_Supplier_SupplierId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
