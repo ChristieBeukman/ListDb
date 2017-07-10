@@ -17,6 +17,7 @@
     <Grid>
         <StackPanel>
             <Button Content="ItemCategory" Command="{Binding LoadItemCategoryView, Source={StaticResource ViewModel}}"/>
+          
         </StackPanel>
         
     </Grid>
